@@ -4,6 +4,9 @@
 (setq load-path
       (append
        (list (expand-file-name "/usr/share/emacs/site-lisp")) load-path))
+(setq load-path
+      (append
+       (list (expand-file-name "/Users/inohiro/.emacs.d")) load-path))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; emphasize current line
