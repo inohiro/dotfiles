@@ -21,7 +21,7 @@ git_custom_status() {
 # PROMPT='%{$fg[cyan]%}[%~% ]%(?.%{$fg[green]%}.%{$fg[red]%})%B$%b '
 
 if expr $HOST : "inohiro-ng-mac.local" > /dev/null; then
-  PROMPT="%{${fg[blue]}%}%n@%m %{${fg[yellow]}%}[%c]%{${fg[blue]}%} %(!.#.$) %{${reset_color}%}"
+  PROMPT="%{$fg[blue]%}%n@%m %{$fg[yellow]%}[%c]%{$fg[blue]%} %(!.#.$) %{$reset_color%}"
 else
   PROMPT="%{${fg[blue]}%}%n%{${fg[yellow]}%}@%m %{${fg[yellow]}%}[%c]%{${fg[blue]}%} %(!.#.$) %{${reset_color}%}"
 fi
