@@ -32,3 +32,27 @@ fi
 
 # bash style - http://blog.blueblack.net/item_207
 # escapes - http://www.acm.uiuc.edu/workshops/zsh/prompt/escapes.html
+
+### my settings ###
+
+## basic
+
+export LANG=ja_JP.UTF-8
+export EDITOR="emacs"
+
+## aliases
+
+alias zshconfig="emacs ~/.zshrc"
+alias zshreload="source ~/.zshrc"
+alias tailf='tail -f'
+alias here='open .'
+
+## history
+
+HISTFILE=~/.zsh_history           # historyファイル
+HISTSIZE=10000                    # ファイルサイズ
+SAVEHIST=10000                    # saveする量
+setopt hist_ignore_dups           # 重複を記録しない
+setopt hist_reduce_blanks         # スペース排除
+setopt share_history              # 履歴ファイルを共有
+setopt EXTENDED_HISTORY           # zshの開始終了を記録
