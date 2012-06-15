@@ -44,13 +44,13 @@ export EDITOR="emacs"
 
 alias zshconfig="emacs ~/.zshrc"
 alias zshreload="source ~/.zshrc"
-alias tailf='tail -f'
-alias here='open .'
 
 if [[ "${OSTYPE}" = darwin* ]] ; then
    alias mysqld_start="sudo /Library/StartupItems/MySQLCOM/MySQLCOM start"
    alias mysqld_stop="sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop"
    alias mysqld_restart="sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart"
+   alias tailf="tail -f"
+   alias here="open ."
 fi
 
 ## history
