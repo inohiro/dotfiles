@@ -59,7 +59,7 @@ if [[ "${OSTYPE}" = darwin* ]] ; then
 fi
 
 if [[ "${OSTYPE}" = linux* ]] ; then
-   alias mem_free="sudo sync && sudo echo 3 > /proc/sys/vm/drop_caches"
+   alias mem_free="sudo sysctl -w vm.drop_caches=3"
 fi
 
 ## history
