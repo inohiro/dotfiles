@@ -52,9 +52,9 @@ if [[ "${OSTYPE}" = darwin* ]] ; then
    alias mysqld_stop="sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop"
    alias mysqld_restart="sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart"
 
-#   alias tomcat_start=''
-#   alias tomcat_stop=''
-#   alias tomcat_restart='tomcat_stop && tomcat_start'
+   alias tomcat_start="sudo /Library/Tomcat/bin/startup.sh"
+   alias tomcat_stop="sudo /Library/Tomcat/bin/shutdown.sh"
+   alias tomcat_restart="tomcat_stop && tomcat_start"
 
    alias tailf="tail -f"
    alias here="open ."
