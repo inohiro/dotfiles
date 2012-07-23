@@ -9,7 +9,10 @@
        (list (expand-file-name "/Users/inohiro/.emacs.d")) load-path))
 (setq load-path
       (append
-       (list (expand-file-name "/Users/inohiro/.emacs.d/js2-mode")) load-path))
+       (list (expand-file-name "/home/inohiro/.emacs.d")) load-path))
+;; (setq load-paths
+;;      (append
+;;       (list (expand-file-name "/Users/inohiro/.emacs.d/js2-mode")) load-path))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; set coding-system to UTF-8

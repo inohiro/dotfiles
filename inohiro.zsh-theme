@@ -51,8 +51,17 @@ if [[ "${OSTYPE}" = darwin* ]] ; then
    alias mysqld_start="sudo /Library/StartupItems/MySQLCOM/MySQLCOM start"
    alias mysqld_stop="sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop"
    alias mysqld_restart="sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart"
+
+#   alias tomcat_start=''
+#   alias tomcat_stop=''
+#   alias tomcat_restart='tomcat_stop && tomcat_start'
+
    alias tailf="tail -f"
    alias here="open ."
+fi
+
+if [[ "${OSTYPE}" = linux* ]] ; then
+   alias mem_free="sudo sysctl -w vm.drop_caches=3"
 fi
 
 ## history
