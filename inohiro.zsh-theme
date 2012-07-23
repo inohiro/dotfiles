@@ -45,6 +45,8 @@ export EDITOR="emacs"
 alias zshconfig="emacs ~/.zshrc"
 alias zshreload="source ~/.zshrc"
 
+alias gst="git status -sb"
+
 if [[ "${OSTYPE}" = darwin* ]] ; then
    alias mysqld_start="sudo /Library/StartupItems/MySQLCOM/MySQLCOM start"
    alias mysqld_stop="sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop"
