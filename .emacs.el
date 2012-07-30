@@ -6,10 +6,14 @@
        (list (expand-file-name "/usr/share/emacs/site-lisp")) load-path))
 (setq load-path
       (append
+       (list (expand-file-name "/usr/local/share/emacs/site-lisp")) load-path))
+(setq load-path
+      (append
        (list (expand-file-name "/Users/inohiro/.emacs.d")) load-path))
 (setq load-path
       (append
        (list (expand-file-name "/home/inohiro/.emacs.d")) load-path))
+
 ;; (setq load-paths
 ;;      (append
 ;;       (list (expand-file-name "/Users/inohiro/.emacs.d/js2-mode")) load-path))
@@ -53,7 +57,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Go support
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(require 'go-mode-load )
+;; (require 'go-mode-load )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; n3 mode
@@ -159,8 +163,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; (autoload 'js2-mode "js2-mode/js2-mode" nil t)
-(require 'js2-mode)
-(add-to-list 'auto-mode-alist '("\\.\\(js\\|json\\)$" . js2-mode))
+;; (require 'js2-mode)
+;; (add-to-list 'auto-mode-alist '("\\.\\(js\\|json\\)$" . js2-mode))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Show Invisible Characters
@@ -194,3 +198,38 @@
 ;; (if window-system(require 'caml-font))
 ;; (setq inferior-caml-program "/usr/local/bin/ocaml")
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; mmm-mode for jsp
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; (require 'cl)
+;; (require 'mmm-auto)
+;; (require 'mmm-vars)
+
+;; (mmm-add-group 'jsp
+;;  `((jsp-comment
+;;     :submode text-mode
+;;     :face mmm-comment-submode-face
+;;     :front "<%--"
+;;     :back "--%>"
+;;     :insert ((?- jsp-comment nil @ "<%--" @ " " _ " " @ "--%>" @))
+;;     )
+;;    (jsp-code
+;;     :submode java
+;;     :match-face (("<%!" . mmm-declaration-submode-face)
+;;                  ("<%=" . mmm-output-submode-face)
+;;                  ("<%"  . mmm-code-submode-face))
+;;     :front "<%[!=]?"
+;;     :back "%>"
+;;     :match-name "jsp"
+;;     :insert ((?% jsp-code nil @ "<%" @ " " _ " " @ "%>" @)
+;;              (?! jsp-declaration nil @ "<%!" @ " " _ " " @ "%>" @)
+;;              (?= jsp-expression nil @ "<%=" @ " " _ " " @ "%>" @))
+;;     )
+;;    (jsp-directive
+;;     :submode text-mode
+;;     :face mmm-special-submode-face
+;;     :front "<%@"
+;;     :back "%>"
+;;     :insert ((?@ jsp-directive nil @ "<%@" @ " " _ " " @ "%>" @))
+;;     )))
