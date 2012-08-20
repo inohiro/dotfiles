@@ -26,5 +26,29 @@
 		<key>utf8</key>
 		<false/>
 	</dict>
+	<dict>
+		<key>keyword</key>
+		<string>h</string>
+		<key>spaces</key>
+		<false/>
+		<key>text</key>
+		<string>はてブ</string>
+		<key>url</key>
+		<string>http://b.hatena.ne.jp/InoHiro/search?q={query}</string>
+		<key>utf8</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>keyword</key>
+		<string>t</string>
+		<key>spaces</key>
+		<false/>
+		<key>text</key>
+		<string>Twitter</string>
+		<key>url</key>
+		<string>https://twitter.com/#!/search/{query}</string>
+		<key>utf8</key>
+		<true/>
+	</dict>
 </array>
 </plist>
