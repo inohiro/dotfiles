@@ -12,11 +12,11 @@ git_custom_status() {
 }
 
 #RVM and git settings
-# if [[ -s ~/.rvm/scripts/rvm ]] ; then 
-#  RPS1='$(git_custom_status)%{$fg[red]%}[`~/.rvm/bin/rvm-prompt`]%{$reset_color%} $EPS1'
-# else
+ if [[ -s ~/.rvm/scripts/rvm ]] ; then 
+  RPS1='$(git_custom_status)%{$fg[red]%}[`~/.rvm/bin/rvm-prompt`]%{$reset_color%} $EPS1'
+ else
   RPS1='$(git_custom_status) $EPS1'
-# fi
+ fi
 
 # PROMPT='%{$fg[cyan]%}[%~% ]%(?.%{$fg[green]%}.%{$fg[red]%})%B$%b '
 
@@ -71,5 +71,5 @@ HISTSIZE=10000                    # ファイルサイズ
 SAVEHIST=10000                    # saveする量
 setopt hist_ignore_dups           # 重複を記録しない
 setopt hist_reduce_blanks         # スペース排除
-setopt share_history              # 履歴ファイルを共有
+# setopt share_history              # 履歴ファイルを共有
 setopt EXTENDED_HISTORY           # zshの開始終了を記録
