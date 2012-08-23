@@ -1,8 +1,10 @@
 
+#  PROMPT="%n@%m [%c] %(!.#.$) "
+
 if expr $HOST : "inohiro-ng-mac.local" > /dev/null; then
-  PROMPT="%{$fg[blue]%}%n@%m %{$fg[yellow]%}[%c]%{$fg[blue]%} %(!.#.$) %{$reset_color%}"
+  PROMPT="%F{cyan}%n%f%F{red}@%m%f %F{yellow}[%c]%f %F{blue}%(!.#.$)%f "
 else
-  PROMPT="%{$fg[blue]%}%n%{$fg[yellow]%}@%m %{$fg[yellow]%}[%c]%{$fg[blue]%} %(!.#.$) %{$reset_color%}"
+  PROMPT="%F{cyan}%n%f%F{yellow}@%m [%c]%f %F{blue}%(!.#.$)%f "
 fi
 
 ### my settings ###
