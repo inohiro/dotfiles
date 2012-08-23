@@ -2,7 +2,7 @@
 #  PROMPT="%n@%m [%c] %(!.#.$) "
 
 if expr $HOST : "inohiro-ng-mac.local" > /dev/null; then
-  PROMPT="%F{cyan}%n%f%F{red}@%m%f %F{yellow}[%c]%f %F{blue}%(!.#.$)%f "
+  PROMPT="%F{cyan}%n%f%F{green}@%m%f %F{yellow}[%c]%f %F{blue}%(!.#.$)%f "
 else
   PROMPT="%F{cyan}%n%f%F{yellow}@%m [%c]%f %F{blue}%(!.#.$)%f "
 fi
