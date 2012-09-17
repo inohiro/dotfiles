@@ -62,6 +62,7 @@ fi
 
 if [[ "${OSTYPE}" = linux* ]] ; then
    alias mem_free="sudo sysctl -w vm.drop_caches=3"
+   alias aptitude='nocorrect aptitude'
 fi
 
 ## history
