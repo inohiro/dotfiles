@@ -1,0 +1,8 @@
+[user]
+	name = Hiroyuki Inoue
+	email = mammymax@gmail.com
+
+[alias]
+	ci = commit
+	st = status
+
