@@ -1,7 +1,7 @@
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}%{$fg[green]%}["
-ZSH_THEME_GIT_PROMPT_SUFFIX="]%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN=""
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%}⚡%{$reset_color%}"
+# ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%}%{$fg[green]%}["
+# ZSH_THEME_GIT_PROMPT_SUFFIX="]%{$reset_color%}"
+# ZSH_THEME_GIT_PROMPT_CLEAN=""
+# ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%}⚡%{$reset_color%}"
 
 #Customized git status, oh-my-zsh currently does not allow render dirty status before branch
 git_custom_status() {
@@ -18,13 +18,21 @@ git_custom_status() {
   RPS1='$(git_custom_status) $EPS1'
  fi
 
+PROMPT=$'%{$fg[green]%}%n@%m %{$fg[blue]%}%D{[%I:%M:%S]} %{$reset_color%}%{$fg[white]%}[%~]%{$reset_color%} $(git_prompt_info)\
+%{$fg[blue]%}->%{$fg[blue]%} %(!.#.$)%{$reset_color%} '
+
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[green]%}["
+ZSH_THEME_GIT_PROMPT_SUFFIX="]%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}*%{$fg[green]%}"
+ZSH_THEME_GIT_PROMPT_CLEAN=""
+
 # PROMPT='%{$fg[cyan]%}[%~% ]%(?.%{$fg[green]%}.%{$fg[red]%})%B$%b '
 
-if expr $HOST : "inohiro-ng-mac.local" > /dev/null; then
-  PROMPT="%{$fg[blue]%}%n@%m %{$fg[yellow]%}[%c]%{$fg[blue]%} %(!.#.$) %{$reset_color%}"
-else
-  PROMPT="%{$fg[blue]%}%n%{$fg[yellow]%}@%m %{$fg[yellow]%}[%c]%{$fg[blue]%} %(!.#.$) %{$reset_color%}"
-fi
+# if expr $HOST : "inohiro-ng-mac.local" > /dev/null; then
+#   PROMPT="%{$fg[blue]%}%n@%m %{$fg[yellow]%}[%c]%{$fg[blue]%} %(!.#.$) %{$reset_color%}"
+# else
+#   PROMPT="%{$fg[blue]%}%n%{$fg[yellow]%}@%m %{$fg[yellow]%}[%c]%{$fg[blue]%} %(!.#.$) %{$reset_color%}"
+# fi
 
 # PROMPT2='%{$fg[red]%}[%d]%{$reset_color%}'
 # RPS1="$(git_prompt_info)"
