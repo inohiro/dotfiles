@@ -50,5 +50,17 @@
 		<key>utf8</key>
 		<true/>
 	</dict>
+	<dict>
+	  <key>keyword</key>
+	  <string>dblp</string>
+	  <key>spaces</key>
+	  <false/>
+	  <key>text</key>
+	  <string>DBLP</string>
+	  <key>url</key>
+	  <string>http://www.dblp.org/search/index.php#query={query}</string>
+	  <key>utf8</key>
+	  <true/>
+	</dict>
 </array>
 </plist>
