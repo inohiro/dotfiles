@@ -1,1 +1,8 @@
 PS1='%n@%m %d %# '
+
+if [[ "${OSTYPE}" = linux* ]] ; then
+   alias mem_free='sysctl -w vm.drop_caches=3'
+   alias aptitude='nocorrect aptitude'
+   alias mysql='nocorrect mysql'
+fi
+
