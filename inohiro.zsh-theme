@@ -73,6 +73,11 @@ if [[ "${OSTYPE}" = linux* ]] ; then
    alias aptitude='nocorrect aptitude'
 fi
 
+## Search
+
+bindkey '^R' history-incremental-pattern-search-backward
+bindkey '^S' history-incremental-pattern-search-forward
+
 ## history
 
 HISTFILE=~/.zsh_history           # historyファイル
