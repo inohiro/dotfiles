@@ -27,22 +27,23 @@ alias zshreload="source ~/.zshrc"
 alias gst="git status -sb"
 
 if [[ "${OSTYPE}" = darwin* ]] ; then
-   alias mysqld_start="sudo /Library/StartupItems/MySQLCOM/MySQLCOM start"
-   alias mysqld_stop="sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop"
-   alias mysqld_restart="sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart"
+   alias mysqld_start   = "sudo /Library/StartupItems/MySQLCOM/MySQLCOM start"
+   alias mysqld_stop    = "sudo /Library/StartupItems/MySQLCOM/MySQLCOM stop"
+   alias mysqld_restart = "sudo /Library/StartupItems/MySQLCOM/MySQLCOM restart"
 
-   alias tomcat_start="sudo /Library/Tomcat/bin/startup.sh"
-   alias tomcat_stop="sudo /Library/Tomcat/bin/shutdown.sh"
-   alias tomcat_restart="tomcat_stop && tomcat_start"
+   alias tomcat_start   = "sudo /Library/Tomcat/bin/startup.sh"
+   alias tomcat_stop    = "sudo /Library/Tomcat/bin/shutdown.sh"
+   alias tomcat_restart = "tomcat_stop && tomcat_start"
 
-   alias tailf="tail -f"
-   alias here="open ."
+   alias tailf = "tail -f"
+   alias here  = "open ."
 fi
 
 if [[ "${OSTYPE}" = linux* ]] ; then
-   alias mem_free="sudo sysctl -w vm.drop_caches=3"
-   alias aptitude='nocorrect aptitude'
-   alias mysql='nocorrect mysql'
+   alias mem_free = 'sudo sysctl -w vm.drop_caches=3'
+   alias aptitude = 'nocorrect aptitude'
+   alias mysql	  = 'nocorrect mysql'
+   alias sudo	  = 'nocorrect sudo'
 fi
 
 ## Search
