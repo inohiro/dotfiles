@@ -25,6 +25,7 @@ alias zshconfig="emacs ~/.zshrc"
 alias zshreload="source ~/.zshrc"
 
 alias gst="git status -sb"
+alias lns="ln -s"
 
 if [[ "${OSTYPE}" = darwin* ]] ; then
    alias mysqld_start="sudo /Library/StartupItems/MySQLCOM/MySQLCOM start"
