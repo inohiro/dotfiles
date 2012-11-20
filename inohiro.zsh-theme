@@ -18,6 +18,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 export LANG=ja_JP.UTF-8
 export EDITOR="emacs"
+export LESS="-R"
 
 ## aliases
 
@@ -26,6 +27,8 @@ alias zshreload="source ~/.zshrc"
 
 alias gst="git status -sb"
 alias lns="ln -s"
+
+alias diff='colordiff'
 
 if [[ "${OSTYPE}" = darwin* ]] ; then
    alias mysqld_start="sudo /Library/StartupItems/MySQLCOM/MySQLCOM start"

@@ -6,3 +6,6 @@
 	ci = commit
 	st = status
 
+[color]
+	ui = true
+
