@@ -62,5 +62,17 @@
 	  <key>utf8</key>
 	  <true/>
 	</dict>
+	<dict>
+	  <key>keyword</key>
+	  <string>b</string>
+	  <key>spaces</key>
+	  <false/>
+	  <key>text</key>
+	  <string>Hatena Bookmark</string>
+	  <key>url</key>
+	  <string>http://b.hatena.ne.jp/InoHiro/add.confirm?url={query}</string>
+	  <key>utf8</key>
+	  <true/>
+	</dict>
 </array>
 </plist>
