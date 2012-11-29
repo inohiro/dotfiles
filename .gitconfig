@@ -5,6 +5,7 @@
 [alias]
 	ci = commit
 	st = status
+	br = branch
 
 [color]
 	ui = true
