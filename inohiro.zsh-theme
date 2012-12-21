@@ -26,6 +26,8 @@ alias zshreload="source ~/.zshrc"
 
 alias gst="git status -sb"
 alias lns="ln -s"
+alias gst="git st"
+alias g="git"
 
 alias diff='colordiff'
 
