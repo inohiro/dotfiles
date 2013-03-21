@@ -1,8 +1,8 @@
 if expr $HOST : "inohiro-ng-mac.local" > /dev/null; then
-   PROMPT=$'%{$fg[green]%}%n@%m %{$fg[blue]%}%D{[%I:%M:%S]} %{$reset_color%}%{$fg[white]%}[%~]%{$reset_color%} %{$fg[red]%}[`~/.rvm/bin/rvm-prompt`]%{$reset_color%} $(git_prompt_info) \
+   PROMPT=$'%{$fg[green]%}%n@%m %{$fg[blue]%}%D{[%I:%M:%S]} %{$reset_color%}%{$fg[white]%}[%~]%{$reset_color%} $(git_prompt_info) \
 %{$fg[blue]%}->%{$fg[blue]%} %(!.#.$)%{$reset_color%} '
 else
-   PROMPT=$'%{$fg[green]%}%n@%{$fg[red]%}%m %{$fg[blue]%}%D{[%I:%M:%S]} %{$reset_color%}%{$fg[white]%}[%~]%{$reset_color%} %{$fg[red]%}[`~/.rvm/bin/rvm-prompt`]%{$reset_color%} $(git_prompt_info) \
+   PROMPT=$'%{$fg[green]%}%n@%{$fg[red]%}%m %{$fg[blue]%}%D{[%I:%M:%S]} %{$reset_color%}%{$fg[white]%}[%~]%{$reset_color%} $(git_prompt_info) \
 %{$fg[blue]%}->%{$fg[blue]%} %(!.#.$)%{$reset_color%} '
 fi
 
