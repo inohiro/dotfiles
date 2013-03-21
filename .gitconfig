@@ -13,3 +13,5 @@
 [include]
 	path = ./.gitconfig.local
 
+[core]
+	excludesfile = /Users/inohiro/.gitignore_global
