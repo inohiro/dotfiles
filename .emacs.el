@@ -1,22 +1,66 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; load site-lisp directory
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(setq load-path
-      (append
-       (list (expand-file-name "/usr/share/emacs/site-lisp")) load-path))
-(setq load-path
-      (append
-       (list (expand-file-name "/usr/local/share/emacs/site-lisp")) load-path))
-(setq load-path
-      (append
-       (list (expand-file-name "/Users/inohiro/.emacs.d")) load-path))
-(setq load-path
-      (append
-       (list (expand-file-name "/home/inohiro/.emacs.d")) load-path))
 
-;; (setq load-paths
-;;      (append
-;;       (list (expand-file-name "/Users/inohiro/.emacs.d/js2-mode")) load-path))
+(setq load-path
+      (append
+       (list (expand-file-name "/Users/hiroyuki-inoue/.emacs.d")) load-path))
+(setq load-path
+      (append
+       (list (expand-file-name "/Users/hiroyuki-inoue/.emacs.d")) load-path))
+(setq load-path
+      (append
+       (list (expand-file-name "/Users/hiroyuki-inoue/.emacs.d/auto-complete")) load-path))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; haml-mode
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (add-hook 'haml-mode-hook
+;;                (lambda ()
+;;                  (setq indent-tabs-mode nil)
+;;                  (define-key haml-mode-map "\C-m" 'newline-and-indent)))
+
+;;haml-mode
+(require 'haml-mode)
+(add-to-list 'auto-mode-alist '("\\.haml$" . haml-mode))
+
+;;sass-mode
+;; (require 'sass-mode)
+;; (add-to-list 'auto-mode-alist '("\\.sass$" . sass-mode))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; auto-complete
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(require 'auto-complete-config)
+(global-auto-complete-mode t)
+
+(define-key ac-menu-map (kbd "C-n")   'ac-next)
+(define-key ac-menu-map (kbd "C-p")   'ac-previous)
+(define-key ac-menu-map (kbd "M-TAB") nil)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; rsence
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(setq rsense-home "~/.emacs.d/opt/rsense")
+(add-to-list 'load-path (concat rsense-home "/etc"))
+(require 'rsense)
+
+(add-hook 'ruby-mode-hook
+          '(lambda ()
+             ;; .や::を入力直後から補完開始
+             (add-to-list 'ac-sources 'ac-source-rsense-method)
+             (add-to-list 'ac-sources 'ac-source-rsense-constant)
+             ;; C-x .で補完出来るようキーを設定
+             (define-key ruby-mode-map (kbd "C-x .") 'ac-complete-rsense)))
+
+;; show references - ruby reference manual
+
+(setq rsense-rurema-home (concat rsense-home "/doc/ruby-refm-1.9.2-dynamic-20110629"))
+(setq rsense-rurema-refe "refe-1_9_2")
+
+;; http://bit.ly/QdWXxr
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; set coding-system to UTF-8

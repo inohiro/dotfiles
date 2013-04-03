@@ -1,0 +1,150 @@
+.
+├── ac-comphist.dat
+├── auto-complete -> auto-complete-1.3.1
+├── auto-complete-1.3.1
+│   ├── COPYING.FDL.txt
+│   ├── COPYING.GPLv3.txt
+│   ├── Makefile
+│   ├── README.txt
+│   ├── TODO.txt
+│   ├── auto-complete-config.el
+│   ├── auto-complete.el
+│   ├── dict
+│   │   ├── c++-mode
+│   │   ├── c-mode
+│   │   ├── clojure-mode
+│   │   ├── css-mode
+│   │   ├── java-mode
+│   │   ├── javascript-mode
+│   │   ├── php-mode
+│   │   ├── python-mode
+│   │   ├── ruby-mode
+│   │   ├── scheme-mode
+│   │   └── tcl-mode
+│   ├── doc
+│   │   ├── ac-fuzzy.png
+│   │   ├── ac-isearch.png
+│   │   ├── ac.png
+│   │   ├── changes.ja.txt
+│   │   ├── changes.txt
+│   │   ├── demo.txt
+│   │   ├── index.ja.txt
+│   │   ├── index.txt
+│   │   ├── manual.ja.txt
+│   │   ├── manual.txt
+│   │   └── style.css
+│   ├── etc
+│   │   ├── install.el
+│   │   └── test.txt
+│   ├── fuzzy.el
+│   └── popup.el
+├── auto-save-list
+├── haml-mode.el -> /Users/hiroyuki-inoue/github/haml-mode/haml-mode.el
+├── inf-ruby.el -> /Users/hiroyuki-inoue/.rbenv/sources/1.9.3-p392/ruby-1.9.3-p392/misc/inf-ruby.el
+├── init.el -> /Users/hiroyuki-inoue/github/dotfiles/.emacs.el
+├── linum.el
+├── opt
+│   ├── rsense -> rsense-0.3
+│   ├── rsense-0.3
+│   │   ├── README.txt
+│   │   ├── bin
+│   │   │   └── rsense
+│   │   ├── doc
+│   │   │   ├── changes-v0.3.ja.txt
+│   │   │   ├── changes-v0.3.txt
+│   │   │   ├── demo.txt
+│   │   │   ├── devel.txt
+│   │   │   ├── index.ja.txt
+│   │   │   ├── index.txt
+│   │   │   ├── manual.ja.txt
+│   │   │   ├── manual.txt
+│   │   │   ├── rsense-emacs-1.png
+│   │   │   ├── rsense-emacs-2.png
+│   │   │   ├── rsense-emacs-3.png
+│   │   │   ├── rsense-vim.png
+│   │   │   ├── ruby-refm-1.9.2-dynamic-20110629
+│   │   │   │   ├── bitclust
+│   │   │   │   │   ├── ChangeLog
+│   │   │   │   │   ├── README
+│   │   │   │   │   ├── Rakefile
+│   │   │   │   │   ├── bin
+│   │   │   │   │   ├── config.in
+│   │   │   │   │   ├── config.ru
+│   │   │   │   │   ├── config.ru.sample
+│   │   │   │   │   ├── data
+│   │   │   │   │   ├── lib
+│   │   │   │   │   ├── packer.rb
+│   │   │   │   │   ├── server.exe
+│   │   │   │   │   ├── server.exy
+│   │   │   │   │   ├── server.rb
+│   │   │   │   │   ├── setup.rb
+│   │   │   │   │   ├── standalone.rb
+│   │   │   │   │   ├── template.offline
+│   │   │   │   │   ├── test
+│   │   │   │   │   ├── theme
+│   │   │   │   │   ├── tools
+│   │   │   │   │   └── view.cgi
+│   │   │   │   ├── db-1_8_7
+│   │   │   │   │   ├── class
+│   │   │   │   │   ├── doc
+│   │   │   │   │   ├── function
+│   │   │   │   │   ├── library
+│   │   │   │   │   ├── method
+│   │   │   │   │   ├── properties
+│   │   │   │   │   └── refs
+│   │   │   │   ├── db-1_9_2
+│   │   │   │   │   ├── class
+│   │   │   │   │   ├── doc
+│   │   │   │   │   ├── function
+│   │   │   │   │   ├── library
+│   │   │   │   │   ├── method
+│   │   │   │   │   ├── properties
+│   │   │   │   │   └── refs
+│   │   │   │   ├── readme.html
+│   │   │   │   ├── refe-1_8_7
+│   │   │   │   ├── refe-1_8_7.cmd
+│   │   │   │   ├── refe-1_9_2
+│   │   │   │   ├── refe-1_9_2.cmd
+│   │   │   │   ├── server.exe
+│   │   │   │   ├── server.exy
+│   │   │   │   └── server.rb
+│   │   │   └── style.css
+│   │   ├── etc
+│   │   │   ├── config.rb
+│   │   │   ├── console
+│   │   │   ├── jruby-1.4.0.patch
+│   │   │   ├── rsense.el
+│   │   │   └── rsense.vim
+│   │   ├── lib
+│   │   │   ├── antlr-runtime-3.2.jar
+│   │   │   ├── jruby.jar
+│   │   │   └── rsense.jar
+│   │   ├── src
+│   │   │   ├── org
+│   │   │   │   └── cx4a
+│   │   │   │       └── rsense
+│   │   │   └── resources
+│   │   │       └── org
+│   │   │           └── cx4a
+│   │   └── stubs
+│   │       └── 1.8
+│   │           ├── _builtin.rb
+│   │           ├── bigdecimal.rb
+│   │           ├── cgi.rb
+│   │           ├── date.rb
+│   │           ├── optparse.rb
+│   │           ├── rational.rb
+│   │           ├── set.rb
+│   │           ├── socket.rb
+│   │           └── stringio.rb
+│   └── rsense-0.3.zip
+├── powerline.el -> /Users/hiroyuki-inoue/github/powerline/powerline.el
+├── rdoc-mode.el -> /Users/hiroyuki-inoue/.rbenv/sources/1.9.3-p392/ruby-1.9.3-p392/misc/rdoc-mode.el
+├── ruby-block.el
+├── ruby-electric.el -> /Users/hiroyuki-inoue/.rbenv/sources/1.9.3-p392/ruby-1.9.3-p392/misc/ruby-electric.el
+├── ruby-mode.el -> /Users/hiroyuki-inoue/.rbenv/sources/1.9.3-p392/ruby-1.9.3-p392/misc/ruby-mode.el
+├── ruby-style.el -> /Users/hiroyuki-inoue/.rbenv/sources/1.9.3-p392/ruby-1.9.3-p392/misc/ruby-style.el
+├── rubydb2x.el -> /Users/hiroyuki-inoue/.rbenv/sources/1.9.3-p392/ruby-1.9.3-p392/misc/rubydb2x.el
+└── rubydb3x.el -> /Users/hiroyuki-inoue/.rbenv/sources/1.9.3-p392/ruby-1.9.3-p392/misc/rubydb3x.el
+
+43 directories, 104 files
