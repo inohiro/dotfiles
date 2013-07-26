@@ -30,6 +30,7 @@ alias gst="git st"
 alias g="git"
 
 alias diff='colordiff'
+alias lv='lv -c'
 
 if [[ "${OSTYPE}" = darwin* ]] ; then
    alias mysqld_start="sudo /Library/StartupItems/MySQLCOM/MySQLCOM start"
@@ -42,6 +43,7 @@ if [[ "${OSTYPE}" = darwin* ]] ; then
 
    alias tailf="tail -f"
    alias here="open ."
+   alias sha1="openssl sha1"
 fi
 
 if [[ "${OSTYPE}" = linux* ]] ; then
