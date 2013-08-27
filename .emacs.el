@@ -200,16 +200,42 @@
 ;; ruby-mode
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;;
 ;; ruby-electric.el
+;;
+
 (require 'ruby-electric)
 (add-hook 'ruby-mode-hook '(lambda () (ruby-electric-mode t)))
 
+;;
 ;; ruby-block.el
+;;
+
 (require 'ruby-block)
 (ruby-block-mode t)
 (setq ruby-block-highlight-toggle t)
 
+;;
+;; ruby-mode.el
+;;
+
+(autoload 'ruby-mode "ruby-mode"
+  "Mode for editing ruby source files" t)
+(add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Capfile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
+
+(add-hook 'ruby-mode-hook
+          '(lambda ()
+             (setq tab-width 2)
+             (setq ruby-indent-level tab-width)
+             (setq ruby-deep-indent-paren-style nil)
+             (define-key ruby-mode-map [return] 'ruby-reindent-then-newline-and-indent)))
+
+;;
 ;; flymake for ruby
+;;
+
 (require 'flymake)
 ;; Invoke ruby with '-c' to get syntax checking
 (defun flymake-ruby-init ()
@@ -247,6 +273,28 @@
           )
         )
       (setq count (1- count)))))
+
+;; ;;
+;; ;; rcodetools
+;; ;;
+;; (add-to-list 'load-path "~/.rbenv/versions/1.9.3-p429/lib/ruby/gems/1.9.1/gems/rcodetools-0.8.5.0/")
+;; (require 'rcodetools)
+;; (define-key ruby-mode-map (kbd "<C-return>") 'rct-complete-symbol)
+
+;;
+;; rsence
+;;
+(setq rsense-home "~/.emacs.d/rsense-0.3")
+(add-to-list 'load-path (concat rsense-home "/etc"))
+(require 'rsense)
+
+(add-hook 'ruby-mode-hook
+          '(lambda ()
+             ;; .や::を入力直後から補完開始
+             (add-to-list 'ac-sources 'ac-source-rsense-method)
+             (add-to-list 'ac-sources 'ac-source-rsense-constant)
+             ;; C-x .で補完出来るようキーを設定
+             (define-key ruby-mode-map (kbd "C-x .") 'ac-complete-rsense)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; js2-mode
