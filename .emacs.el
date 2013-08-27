@@ -30,6 +30,17 @@
 (set-terminal-coding-system 'utf-8)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; auto-complete-mode
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(ac-config-default)
+
+(define-key ac-menu-map (kbd "C-n")   'ac-next)
+(define-key ac-menu-map (kbd "C-p")   'ac-previous)
+(define-key ac-menu-map (kbd "M-TAB") nil)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; for Aspell (http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?Aspell#g5b60c70)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (setq-default ispell-program-name "aspell") 
