@@ -14,6 +14,15 @@
       (append
        (list (expand-file-name "/home/inohiro/.emacs.d")) load-path))
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; package.el
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; set coding-system to UTF-8
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
