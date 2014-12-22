@@ -1,0 +1,19 @@
+'global':
+  'editor':
+    'showIndentGuide': true
+    'showInvisibles': true
+    'scrollPastEnd': true
+    'softWrapAtPreferredLineLength': true
+    'fontSize': 14
+    'invisibles': {}
+  'exception-reporting':
+    'userId': '6b0ebf2a-35da-a7d7-39ba-1584af6cce3e'
+  'welcome':
+    'showOnStartup': false
+  'metrics':
+    'userId': '5950d32c12b4e926266ba9c0e8ff4c9df29c15c8'
+  'core':
+    'themes': [
+      'atom-dark-ui'
+      'solarized-dark-syntax'
+    ]
