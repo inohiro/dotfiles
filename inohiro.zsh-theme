@@ -53,6 +53,16 @@ if [[ "${OSTYPE}" = linux* ]] ; then
    alias sudo="nocorrect sudo"
 fi
 
+## Functions
+
+### Syntax highlighting with GNU Source-highlight
+
+function lvc() {
+    file="$1"
+    shift
+    hl "$file" | lv -c
+}
+
 ## Search
 
 bindkey '^R' history-incremental-pattern-search-backward
