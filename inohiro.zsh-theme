@@ -70,10 +70,10 @@ bindkey '^S' history-incremental-pattern-search-forward
 
 ## history
 
-HISTFILE=~/.zsh_history           # historyファイル
-HISTSIZE=10000                    # ファイルサイズ
-SAVEHIST=10000                    # saveする量
-setopt hist_ignore_dups           # 重複を記録しない
-setopt hist_reduce_blanks         # スペース排除
-# setopt share_history              # 履歴ファイルを共有
-setopt EXTENDED_HISTORY           # zshの開始終了を記録
+HISTFILE=~/.zsh_history           # history file location
+HISTSIZE=100000                   # history file size (memory)
+SAVEHIST=100000                   # history entries (file)
+setopt hist_ignore_dups           # ignore saving duplicated
+setopt hist_reduce_blanks         # remote spaces
+# setopt share_history              # share history file
+setopt EXTENDED_HISTORY           # save start and end of zsh
