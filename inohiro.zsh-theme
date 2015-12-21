@@ -77,3 +77,21 @@ setopt hist_ignore_dups           # ignore saving duplicated
 setopt hist_reduce_blanks         # remote spaces
 # setopt share_history              # share history file
 setopt EXTENDED_HISTORY           # save start and end of zsh
+
+## peco
+
+function peco-select-history() {
+    local tac
+    if which tac > /dev/null; then
+	tac="tac"
+    else
+	tac="tail -r"
+    fi
+    BUFFER=$(\history -n 1 | \
+		    eval $tac | \
+		    peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle clear-screen
+}
+zle -N peco-select-history
+bindkey '^r' peco-select-history
