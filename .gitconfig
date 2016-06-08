@@ -19,3 +19,6 @@
 [core]
 	excludesfile = /Users/inohiro/.gitignore_global
 	autocrlf     = input
+
+[grep]
+	linenumber = true
