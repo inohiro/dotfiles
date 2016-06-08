@@ -1,6 +1,7 @@
 atom-material-syntax@0.4.6
 atom-material-ui@1.2.13
 atomic-emacs@0.9.1
+file-types@0.5.1
 highlight-line@0.11.1
 highlight-selected@0.11.2
 incremental-search@5.0.5

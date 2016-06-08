@@ -1,8 +1,15 @@
 "*":
+  "":
+    source:
+      sql:
+        editor:
+          tabLength: 4
   core:
+    allowPendingPaneItems: false
     destroyEmptyPanes: false
     disabledPackages: [
       "webbox-color"
+      "spell-check"
     ]
     themes: [
       "atom-dark-ui"
@@ -14,6 +21,10 @@
     scrollPastEnd: true
   "exception-reporting":
     userId: "6b0ebf2a-35da-a7d7-39ba-1584af6cce3e"
+  "file-types":
+    ct: "source.sql"
+    job: "source.yaml"
+    "sql\\.job": "source.sql"
   "highlight-line":
     underline: "dotted"
   "markdown-preview":
@@ -32,8 +43,5 @@
   "webbox-color": {}
   welcome:
     showOnStartup: false
-".source.sql":
-  editor:
-    tabLength: 4
 rspec:
   command: "bundle exec rspec"
