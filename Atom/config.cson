@@ -1,19 +1,39 @@
-'global':
-  'editor':
-    'showIndentGuide': true
-    'showInvisibles': true
-    'scrollPastEnd': true
-    'softWrapAtPreferredLineLength': true
-    'fontSize': 14
-    'invisibles': {}
-  'exception-reporting':
-    'userId': '6b0ebf2a-35da-a7d7-39ba-1584af6cce3e'
-  'welcome':
-    'showOnStartup': false
-  'metrics':
-    'userId': '5950d32c12b4e926266ba9c0e8ff4c9df29c15c8'
-  'core':
-    'themes': [
-      'atom-dark-ui'
-      'solarized-dark-syntax'
+"*":
+  core:
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "webbox-color"
     ]
+    themes: [
+      "atom-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  editor:
+    fontFamily: "Monaco"
+    invisibles: {}
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "6b0ebf2a-35da-a7d7-39ba-1584af6cce3e"
+  "highlight-line":
+    underline: "dotted"
+  "markdown-preview":
+    breakOnSingleNewline: true
+  metrics:
+    userId: "5950d32c12b4e926266ba9c0e8ff4c9df29c15c8"
+  pigments: {}
+  react: {}
+  rspec:
+    command: "bundle exec rspec"
+    save_before_run: true
+  term2:
+    cursorBlink: false
+  term3:
+    cursorBlink: false
+  "webbox-color": {}
+  welcome:
+    showOnStartup: false
+".source.sql":
+  editor:
+    tabLength: 4
+rspec:
+  command: "bundle exec rspec"
