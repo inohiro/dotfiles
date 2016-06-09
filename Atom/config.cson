@@ -23,8 +23,8 @@
     userId: "6b0ebf2a-35da-a7d7-39ba-1584af6cce3e"
   "file-types":
     ct: "source.sql"
-    job: "source.yaml"
-    "sql\\.job": "source.sql"
+    ".sql.job$": "source.sql"
+    ".job$": "source.yaml"
   "highlight-line":
     underline: "dotted"
   "markdown-preview":
