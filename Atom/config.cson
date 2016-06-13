@@ -1,15 +1,11 @@
 "*":
-  "":
-    source:
-      sql:
-        editor:
-          tabLength: 4
   core:
     allowPendingPaneItems: false
     destroyEmptyPanes: false
     disabledPackages: [
       "webbox-color"
       "spell-check"
+      "language-sparql"
     ]
     themes: [
       "atom-dark-ui"
@@ -36,6 +32,10 @@
   rspec:
     command: "bundle exec rspec"
     save_before_run: true
+  source:
+    sql:
+      editor:
+        tabLength: 4
   term2:
     cursorBlink: false
   term3:
@@ -43,5 +43,8 @@
   "webbox-color": {}
   welcome:
     showOnStartup: false
+".source.sql":
+  editor:
+    tabLength: 4
 rspec:
   command: "bundle exec rspec"
