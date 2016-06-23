@@ -14,7 +14,6 @@
       (append
        (list (expand-file-name "/home/inohiro/.emacs.d")) load-path))
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; package.el
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -39,6 +38,13 @@
 (define-key ac-menu-map (kbd "C-n")   'ac-next)
 (define-key ac-menu-map (kbd "C-p")   'ac-previous)
 (define-key ac-menu-map (kbd "M-TAB") nil)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; set custom extension-mode combination
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-to-list 'auto-mode-alist '("\\.ct\\'" . sql-mode))
+(add-to-list 'auto-mode-alist '("\\.sql.job\\'" . sql-mode))
+(add-to-list 'auto-mode-alist '("\\.job\\'" . yaml-mode))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; for Aspell (http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?Aspell#g5b60c70)
