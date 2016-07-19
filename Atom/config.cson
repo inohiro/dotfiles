@@ -8,7 +8,7 @@
       "language-sparql"
     ]
     themes: [
-      "atom-dark-ui"
+      "metro-ui"
       "solarized-dark-syntax"
     ]
   editor:
@@ -27,6 +27,13 @@
     breakOnSingleNewline: true
   metrics:
     userId: "5950d32c12b4e926266ba9c0e8ff4c9df29c15c8"
+  "metro-ui":
+    theme: "Adaptive Dark"
+    themeAccentColor:
+      red: 7
+      green: 99
+      blue: 216
+      alpha: 1
   pigments: {}
   react: {}
   rspec:
