@@ -18,9 +18,9 @@
   "exception-reporting":
     userId: "6b0ebf2a-35da-a7d7-39ba-1584af6cce3e"
   "file-types":
-    ct: "source.sql"
-    ".sql.job$": "source.sql"
     ".job$": "source.yaml"
+    ".sql.job$": "source.sql"
+    ct: "source.sql"
   "highlight-line":
     underline: "dotted"
   "markdown-preview":
