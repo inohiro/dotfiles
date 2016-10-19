@@ -1,4 +1,19 @@
 "*":
+  "atom-material-ui":
+    colors:
+      abaseColor: "#cddc39"
+      accentColor: "#737f10"
+      paintCursor: true
+      predefinedColor: "Lime"
+    fonts:
+      fontSize: 18
+    tabs:
+      compactTabs: true
+    treeView:
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
   core:
     allowPendingPaneItems: false
     destroyEmptyPanes: false
@@ -7,8 +22,12 @@
       "spell-check"
       "language-sparql"
     ]
+    packagesWithKeymapsDisabled: [
+      "git-diff"
+    ]
+    telemetryConsent: "limited"
     themes: [
-      "metro-ui"
+      "atom-material-ui"
       "solarized-dark-syntax"
     ]
   editor:
@@ -21,8 +40,11 @@
     ".job$": "source.yaml"
     ".sql.job$": "source.sql"
     ct: "source.sql"
+  "git-diff": {}
   "highlight-line":
     underline: "dotted"
+  linter:
+    showErrorPanel: false
   "markdown-preview":
     breakOnSingleNewline: true
   metrics:
@@ -30,10 +52,10 @@
   "metro-ui":
     theme: "Adaptive Dark"
     themeAccentColor:
-      red: 7
-      green: 99
-      blue: 216
       alpha: 1
+      blue: 216
+      green: 99
+      red: 7
   pigments: {}
   react: {}
   rspec:
