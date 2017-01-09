@@ -17,7 +17,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 export LANG=ja_JP.UTF-8
 export EDITOR="emacs"
-export LESS="-R"
+export LESS="-iMSx4 -FXR"
 
 ## aliases
 
