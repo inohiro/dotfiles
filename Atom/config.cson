@@ -22,9 +22,6 @@
       "spell-check"
       "language-sparql"
     ]
-    packagesWithKeymapsDisabled: [
-      "git-diff"
-    ]
     telemetryConsent: "limited"
     themes: [
       "atom-material-ui"
@@ -32,6 +29,7 @@
     ]
   editor:
     fontFamily: "Monaco"
+    fontSize: 13
     invisibles: {}
     scrollPastEnd: true
   "exception-reporting":
@@ -40,8 +38,6 @@
     ".job$": "source.yaml"
     ".sql.job$": "source.sql"
     ct: "source.sql"
-  "git-diff": {}
-  "highlight-line":
     underline: "dotted"
   linter:
     showErrorPanel: false
