@@ -20,11 +20,11 @@
     disabledPackages: [
       "webbox-color"
       "spell-check"
-      "language-sparql"
+      "regex-railroad-diagram"
     ]
     telemetryConsent: "limited"
     themes: [
-      "atom-material-ui"
+      "nord-atom-ui"
       "solarized-dark-syntax"
     ]
   editor:
@@ -32,28 +32,28 @@
     fontSize: 13
     invisibles: {}
     scrollPastEnd: true
+    showIndentGuide: true
   "exception-reporting":
     userId: "6b0ebf2a-35da-a7d7-39ba-1584af6cce3e"
   "file-types":
     ".job$": "source.yaml"
     ".sql.job$": "source.sql"
     ct: "source.sql"
+    cv: "source.sql"
     underline: "dotted"
-  linter:
-    showErrorPanel: false
+  linter: {}
+  "linter-ui-default": {}
   "markdown-preview":
     breakOnSingleNewline: true
   metrics:
     userId: "5950d32c12b4e926266ba9c0e8ff4c9df29c15c8"
   "metro-ui":
     theme: "Adaptive Dark"
-    themeAccentColor:
-      alpha: 1
-      blue: 216
-      green: 99
-      red: 7
-  pigments: {}
+    themeAccentColor: "#0763d8"
+  pigments:
+    autocompleteSuggestionsFromValue: true
   react: {}
+  "regex-railroad-diagram": {}
   rspec:
     command: "bundle exec rspec"
     save_before_run: true
@@ -68,6 +68,9 @@
   "webbox-color": {}
   welcome:
     showOnStartup: false
+".dot.source":
+  editor:
+    showInvisibles: true
 ".source.sql":
   editor:
     tabLength: 4
