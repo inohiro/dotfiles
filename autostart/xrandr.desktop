@@ -1,0 +1,6 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Exec=/usr/bin/xrandr --output eDP1 --scale 1.3x1.3 --panning 3328x1872
+Name=xrandx
+Terminal=false
+Type=Application
