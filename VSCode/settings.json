@@ -1,5 +1,5 @@
-// 既定の設定を上書きするには、このファイル内に設定を挿入します
 {
-    "editor.fontFamily": "Ricty, Menlo, Monaco, 'Courier New', monospace",
+    "workbench.colorTheme": "Solarized Dark",
+    "editor.fontFamily": "'Ricty Regular', Monaco, Menlo, 'Courier New', monospace",
     "editor.fontSize": 14
 }

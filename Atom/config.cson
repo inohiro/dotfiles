@@ -21,15 +21,15 @@
       "webbox-color"
       "spell-check"
       "regex-railroad-diagram"
+      "terminal-plus"
     ]
     telemetryConsent: "limited"
     themes: [
-      "nord-atom-ui"
-      "solarized-dark-syntax"
+      "aesthetic-ui"
+      "pure-syntax"
     ]
   editor:
     fontFamily: "Monaco"
-    fontSize: 13
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -65,6 +65,8 @@
     cursorBlink: false
   term3:
     cursorBlink: false
+  "terminal-plus":
+    toggles: {}
   "webbox-color": {}
   welcome:
     showOnStartup: false
