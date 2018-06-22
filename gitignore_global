@@ -1,0 +1,8 @@
+*~
+.DS_Store
+\#*
+.bundle
+*.tsv
+*.xlsx
+database.yml
+.vscode
