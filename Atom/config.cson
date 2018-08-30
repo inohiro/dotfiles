@@ -36,10 +36,11 @@
   "exception-reporting":
     userId: "6b0ebf2a-35da-a7d7-39ba-1584af6cce3e"
   "file-types":
-    ".job$": "source.yaml"
-    ".sql.job$": "source.sql"
-    ct: "source.sql"
-    cv: "source.sql"
+    "*.ct": "source.sql"
+    "*.cv": "source.sql"
+    "*.job": "source.yaml"
+    "*.rb.job": "source.ruby"
+    "*.sql.job": "source.sql"
     underline: "dotted"
   linter: {}
   "linter-ui-default": {}
