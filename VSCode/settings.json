@@ -1,9 +1,28 @@
 // Mac: $HOME/Library/Application Support/Code/User/settings.json
 {
-    "workbench.colorTheme": "Pure Code",
     "editor.fontFamily": "'Ricty Regular', Monaco, Menlo, 'Courier New', monospace",
     "editor.fontSize": 16,
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "editor.minimap.enabled": false,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "Pure Code",
+    "files.associations": {
+        "*.sql.job": "sql",
+        "*.rb.job": "ruby",
+        "*.sh.job": "shellscript",
+        "*.job": "yaml",
+        "*.ct": "sql",
+        "*.cv": "sql",
+        "*.jsonnet": "javascript"
+    },
+    "[sql]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "[ruby]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "extensions.ignoreRecommendations": false,
+    "window.openFilesInNewWindow": "on"
 }

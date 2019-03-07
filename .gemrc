@@ -1,9 +1,8 @@
 :gem: --local --run-tests
 
 :verbose: true
-:sources: 
-- http://gems.rubyforge.org/
-- http://gems.github.com
+:sources:
+- https://rubygems.org/
 :update_sources: true
 
 install: --no-ri --no-rdoc
