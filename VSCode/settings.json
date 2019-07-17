@@ -24,5 +24,10 @@
         "editor.tabSize": 2
     },
     "extensions.ignoreRecommendations": false,
-    "window.openFilesInNewWindow": "on"
+    "window.openFilesInNewWindow": "on",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "explorer.confirmDelete": false,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "none"
 }
