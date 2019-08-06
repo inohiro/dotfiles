@@ -1,11 +1,10 @@
 // Mac: $HOME/Library/Application Support/Code/User/settings.json
 {
-    "editor.fontFamily": "'Ricty Regular', Monaco, Menlo, 'Courier New', monospace",
+    "editor.fontFamily": "Monaco, 'Source Code Variable', 'Ricty Regular', Menlo, 'Courier New', monospace",
     "editor.fontSize": 16,
     "window.zoomLevel": 0,
     "editor.minimap.enabled": false,
     "editor.tabSize": 2,
-    "workbench.colorTheme": "Pure Code",
     "files.associations": {
         "*.sql.job": "sql",
         "*.rb.job": "ruby",
@@ -13,7 +12,8 @@
         "*.job": "yaml",
         "*.ct": "sql",
         "*.cv": "sql",
-        "*.jsonnet": "javascript"
+        "*.jsonnet": "javascript",
+	"*.yml.liquid": "yaml"
     },
     "[sql]": {
         "editor.insertSpaces": true,
@@ -29,5 +29,6 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "explorer.confirmDelete": false,
     "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "none"
+    "editor.renderWhitespace": "none",
+    "editor.cursorStyle": "block"
 }
