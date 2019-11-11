@@ -9,8 +9,9 @@
 	co = checkout
 	ap = add -p
 	cim = commit -m
-	dmb = !git branch --merged | grep -v 'master' | xargs -I % git branch -d %
-	delete-merged-branches = !git branch --merged | grep -v 'master' | xargs -I % git branch -d %
+	merged-branches = !git branch --merge | egrep -v '\\*|master$'
+	dmd = !git merged-branches | xargs -I{} git branch -d {}
+	delete-merged-branches = !git dmd
 
 [color]
 	ui = true
