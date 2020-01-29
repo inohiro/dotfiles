@@ -47,3 +47,8 @@ function git_ahead -a ahead behind diverged none
     test -n "$diverged"; and echo "$diverged"; or echo "±"
   end
 end
+
+set -g simple_ass_prompt_greeting ''
+
+alias be 'bundle exec '
+alias tailf 'tail -f '
