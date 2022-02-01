@@ -50,5 +50,7 @@ end
 
 set -g simple_ass_prompt_greeting ''
 
+alias reload_fish_config 'source ~/.config/fish/config.fish'
 alias be 'bundle exec '
 alias tailf 'tail -f '
+alias tf 'terraform'

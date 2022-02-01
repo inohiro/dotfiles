@@ -1,10 +1,8 @@
 // Mac: $HOME/Library/Application Support/Code/User/settings.json
 {
-    "editor.fontFamily": "Monaco, 'Source Code Variable', 'Ricty Regular', Menlo, 'Courier New', monospace",
+    "editor.fontFamily": "'IBM Plex Mono', HackGen, Monaco, 'Source Code Variable', 'Ricty Regular', Menlo, 'Courier New', monospace",
     "editor.fontSize": 16,
-    "window.zoomLevel": 0,
     "editor.minimap.enabled": false,
-    "editor.tabSize": 2,
     "files.associations": {
         "*.sql.job": "sql",
         "*.rb.job": "ruby",
@@ -30,5 +28,18 @@
     "explorer.confirmDelete": false,
     "editor.renderControlCharacters": true,
     "editor.renderWhitespace": "none",
-    "editor.cursorStyle": "block"
+    "editor.cursorStyle": "block",
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "tdqt.key": true,
+    "python.defaultInterpreterPath": "/Users/hiroyukiinoue/.pyenv/versions/3.8.0/bin/python",
+    "workbench.colorTheme": "Cobalt2",
+    "python.showStartPage": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "terminal.integrated.fontSize": 16,
+    "editor.bracketPairColorization.enabled": true,
+    "window.zoomLevel": 1
 }

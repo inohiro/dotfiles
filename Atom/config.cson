@@ -16,6 +16,7 @@
       panelShadows: true
   core:
     allowPendingPaneItems: false
+    audioBeep: false
     destroyEmptyPanes: false
     disabledPackages: [
       "webbox-color"
@@ -25,11 +26,12 @@
     ]
     telemetryConsent: "limited"
     themes: [
-      "nord-atom-ui"
-      "pure-syntax"
+      "one-dark-ui"
+      "monokai"
     ]
   editor:
-    fontFamily: "Monaco"
+    fontFamily: "Hackgen, Monaco"
+    fontSize: 22
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true

@@ -6,3 +6,4 @@
 *.xlsx
 database.yml
 .vscode
+.terraform
