@@ -3,11 +3,13 @@
 	email = mammymax@gmail.com
 
 [alias]
+	d = diff
 	ci = commit
 	st = status
 	br = branch
 	co = checkout
 	ap = add -p
+	sw = switch
 	cim = commit -m
 	merged-branches = !git branch --merge | egrep -v '\\*|master$'
 	dmd = !git merged-branches | xargs -I{} git branch -d {}
