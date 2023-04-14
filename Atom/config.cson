@@ -17,6 +17,7 @@
   core:
     allowPendingPaneItems: false
     audioBeep: false
+    automaticallyUpdate: false
     destroyEmptyPanes: false
     disabledPackages: [
       "webbox-color"
@@ -31,7 +32,7 @@
     ]
   editor:
     fontFamily: "Hackgen, Monaco"
-    fontSize: 22
+    fontSize: 19
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
