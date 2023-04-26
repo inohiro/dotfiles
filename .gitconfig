@@ -14,6 +14,7 @@
 	merged-branches = !git branch --merge | egrep -v '\\*|master$'
 	dmd = !git merged-branches | xargs -I{} git branch -d {}
 	delete-merged-branches = !git dmd
+	push-fwl = push --force-with-lease
 
 [color]
 	ui = true
