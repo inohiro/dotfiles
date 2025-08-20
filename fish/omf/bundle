@@ -1,0 +1,5 @@
+package fzf
+theme default
+theme lavender
+theme pure
+theme slacker
