@@ -1,0 +1,4 @@
+[user]
+	email = hiroyuki.inoue@treasure-data.com
+[credential]
+	helper = osxkeychain
