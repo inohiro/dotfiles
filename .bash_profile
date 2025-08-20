@@ -9,8 +9,8 @@ alias tailf='tail -f'
 
 export PS1="\[\033[1;36m\]\u@\h \[\033[33m\][\W] \$\[\033[0m\] " # prompt color
 
-PATH=$PATH:/usr/local/mysql/bin
-PATH=/usr/local/bin:${PATH}
+# PATH=$PATH:/usr/local/mysql/bin
+# PATH=/usr/local/bin:${PATH}
 export PATH
 
 if [ -f ~/.bashrc ]; then

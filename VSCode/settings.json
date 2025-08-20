@@ -1,8 +1,7 @@
 // Mac: $HOME/Library/Application Support/Code/User/settings.json
 {
-    "editor.fontFamily": "'IBM Plex Mono', HackGen, Monaco, 'Source Code Variable', 'Ricty Regular', Menlo, 'Courier New', monospace",
+    "editor.fontFamily": "'Moralerspace Krypton', 'Moralerspace Argon', 'Monaco', 'IBM Plex Mono', HackGen, Monaco, 'Source Code Variable', 'Ricty Regular', Menlo, 'Courier New', monospace",
     "editor.fontSize": 16,
-    "editor.minimap.enabled": false,
     "files.associations": {
         "*.sql.job": "sql",
         "*.rb.job": "ruby",
@@ -11,7 +10,8 @@
         "*.ct": "sql",
         "*.cv": "sql",
         "*.jsonnet": "javascript",
-	"*.yml.liquid": "yaml"
+        "*.yml.liquid": "yaml",
+        "*.erb": "ruby"
     },
     "[sql]": {
         "editor.insertSpaces": true,
@@ -19,7 +19,17 @@
     },
     "[ruby]": {
         "editor.insertSpaces": true,
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "Shopify.ruby-lsp",
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+        "editor.rulers": [
+            120
+        ],
+        "editor.semanticHighlighting.enabled": true
     },
     "extensions.ignoreRecommendations": false,
     "window.openFilesInNewWindow": "on",
@@ -27,19 +37,47 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "explorer.confirmDelete": false,
     "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "none",
-    "editor.cursorStyle": "block",
-    "files.trimTrailingWhitespace": true,
-    "files.trimFinalNewlines": true,
     "workbench.iconTheme": "material-icon-theme",
     "tdqt.key": true,
     "python.defaultInterpreterPath": "/Users/hiroyukiinoue/.pyenv/versions/3.8.0/bin/python",
-    "workbench.colorTheme": "Cobalt2",
     "python.showStartPage": false,
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter.notebook.ipynb",
+        "git-rebase-todo": "gitlens.rebase"
     },
     "terminal.integrated.fontSize": 16,
     "editor.bracketPairColorization.enabled": true,
-    "window.zoomLevel": 1
+    "redhat.telemetry.enabled": false,
+
+    "ruby.useLanguageServer": true,
+    "ruby.intellisense": "rubyLocate",
+    "workbench.startupEditor": "none",
+    "trailing-spaces.deleteModifiedLinesOnly": true,
+    "editor.smartSelect.selectLeadingAndTrailingWhitespace": false,
+    "[python]": {
+    },
+    "editor.minimap.enabled": false,
+    "settingsSync.ignoredExtensions": [
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.vscode-dotnet-runtime"
+    ],
+    "git.openRepositoryInParentFolders": "always",
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "solid",
+    "gitlens.graph.minimap.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "editor.stickyScroll.defaultModel": "indentationModel",
+    "editor.stickyScroll.maxLineCount": 7,
+    "editor.renderWhitespace": "boundary",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.inlineSuggest.showToolbar": "always",
+    "workbench.settings.applyToAllProfiles": [
+        "files.trimTrailingWhitespace"
+    ],
+    "editor.trimAutoWhitespace": false,
+    "workbench.colorTheme": "Atom One Dark",
+    "rubyLsp.addonSettings": {},
+    "rubyLsp.linters": null,
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "docker.extension.enableComposeLanguageServer": false
 }

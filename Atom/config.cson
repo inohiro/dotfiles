@@ -31,8 +31,8 @@
       "monokai"
     ]
   editor:
-    fontFamily: "Hackgen, Monaco"
-    fontSize: 19
+    fontFamily: "Monaco, Hackgen, Monaco"
+    fontSize: 17
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true

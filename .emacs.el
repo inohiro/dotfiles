@@ -25,9 +25,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; diff-hl.el
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(global-diff-hl-mode)
-(add-hook 'dired-mode-hook 'diff-hl-dired-mode)
-(unless (window-system) (diff-hl-margin-mode))
+;; (global-diff-hl-mode)
+;; (add-hook 'dired-mode-hook 'diff-hl-dired-mode)
+;; (unless (window-system) (diff-hl-margin-mode))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; set coding-system to UTF-8
@@ -38,13 +38,13 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; auto-complete-mode
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
-(ac-config-default)
+;; (require 'auto-complete-config)
+;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+;; (ac-config-default)
 
-(define-key ac-menu-map (kbd "C-n")   'ac-next)
-(define-key ac-menu-map (kbd "C-p")   'ac-previous)
-(define-key ac-menu-map (kbd "M-TAB") nil)
+;; (define-key ac-menu-map (kbd "C-n")   'ac-next)
+;; (define-key ac-menu-map (kbd "C-p")   'ac-previous)
+;; (define-key ac-menu-map (kbd "M-TAB") nil)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; set custom extension-mode combination
@@ -52,6 +52,7 @@
 (add-to-list 'auto-mode-alist '("\\.ct\\'" . sql-mode))
 (add-to-list 'auto-mode-alist '("\\.sql.job\\'" . sql-mode))
 (add-to-list 'auto-mode-alist '("\\.job\\'" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.dig\\'" . yaml-mode))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; for Aspell (http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?Aspell#g5b60c70)
@@ -112,7 +113,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (require 'powerline)
-(powerline-default)
+;; (powerline-default)
 
 (setq-default mode-line-format
               '("%e"
@@ -244,9 +245,11 @@
 ;; ruby-block.el
 ;;
 
-(require 'ruby-block)
-(ruby-block-mode t)
-(setq ruby-block-highlight-toggle t)
+;; (require 'ruby-block)
+;; (ruby-block-mode t)
+;; (setq ruby-block-highlight-toggle t)
+
+(require 'ruby-end)
 
 ;;
 ;; ruby-mode.el
@@ -414,3 +417,19 @@
 ;;     :back "%>"
 ;;     :insert ((?@ jsp-directive nil @ "<%@" @ " " _ " " @ "%>" @))
 ;;     )))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(gud-gdb-command-name "gdb --annotate=1")
+ '(large-file-warning-threshold nil)
+ '(package-selected-packages
+   (quote
+    (yaml-mode web-mode ruby-end ruby-electric rsense powerline highlight-indentation flymake-ruby))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
