@@ -20,7 +20,7 @@
 	ui = true
 
 [include]
-	path = ./.gitconfig.local
+	path = ./.gitconfig_local
 
 [core]
 	excludesfile = /Users/inohiro/.gitignore_global
