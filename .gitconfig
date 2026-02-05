@@ -11,6 +11,7 @@
 	co = checkout
 	ap = add -p
 	sw = switch
+	wt = worktree
 	cim = commit -m
 	merged-branches = !git branch --merge | egrep -v '\\*|master$'
 	dmd = !git merged-branches | xargs -I{} git branch -d {}
