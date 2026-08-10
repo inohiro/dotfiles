@@ -1,0 +1,27 @@
+#!/bin/sh
+
+set -e
+
+merged_branches=$(git branch --merge | egrep -v '\*|master$' | sed 's/^[+ ]*//;s/[[:space:]]*$//')
+
+if [ -z "$merged_branches" ]; then
+  echo "No merged branches to delete."
+  exit 0
+fi
+
+for branch in $merged_branches; do
+  worktree_path=$(git worktree list --porcelain | awk -v b="$branch" '
+    /^worktree / { path = substr($0, 10) }
+    /^branch / { if ($0 == "branch refs/heads/" b) print path }
+  ')
+
+  if [ -n "$worktree_path" ]; then
+    echo "Removing worktree for $branch at $worktree_path"
+    git worktree remove "$worktree_path" || echo "  Failed to remove worktree (maybe has changes?), skipping $branch"
+    if git worktree list --porcelain | grep -q "branch refs/heads/$branch"; then
+      continue
+    fi
+  fi
+
+  git branch -d "$branch" || echo "  Failed to delete branch $branch"
+done
