@@ -8,6 +8,7 @@
 	st = status
 	br = branch
 	co = checkout
+	cp = cherry-pick
 	ap = add -p
 	sw = switch
 	wt = worktree
